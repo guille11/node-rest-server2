@@ -45,7 +45,7 @@ let verificaAdminRole = (req, res, next) => {
         });
     }
 };
-
+//
 
 // ====================================
 // Verifica Token para img

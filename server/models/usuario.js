@@ -20,7 +20,7 @@ let usuarioSchema = new Schema({
         unique: true,
         require: [true, 'El correo es necesario']
     },
-    password: {
+    password: { //
         type: String,
         require: [true, 'La contraseña es obligatoria']
     },

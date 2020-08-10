@@ -112,7 +112,7 @@ app.put('/categoria/:id', verificaToken, (req, res) => {
                 ok: false,
                 err
             });
-        }
+        } //
 
         if (!categoriaDB) {
             return res.status(400).json({

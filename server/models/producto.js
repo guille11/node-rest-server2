@@ -19,7 +19,7 @@ var productoSchema = new Schema({
         type: String,
         require: false,
     },
-    disponible: {
+    disponible: { //
         type: Boolean,
         required: true,
         default: true

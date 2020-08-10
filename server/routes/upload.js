@@ -167,7 +167,7 @@ function imagenProducto(id, res, nombreArchivo) {
 function borrarArchivo(nombreImagen, tipo) {
     let pathImagen = path.resolve(__dirname, `../../uploads/${ tipo }/${ nombreImagen }`);
 
-    if (fs.existsSync(pathImagen)) {
+    if (fs.existsSync(pathImagen)) { //
         fs.unlinkSync(pathImagen);
     }
 }

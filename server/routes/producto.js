@@ -83,7 +83,7 @@ app.get('/producto/buscar/:termino', verificaToken, (req, res) => {
     Producto.find({ nombre: regex })
         .populate('categoria', 'descripcion')
         .exec((err, productos) => {
-            if (err) {
+            if (err) { //
                 return res.status(500).json({
                     ok: false,
                     err
